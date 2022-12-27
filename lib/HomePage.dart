@@ -23,7 +23,6 @@ class _HomePageState extends State<HomePage> {
             Icon(Icons.shopping_cart),
             SizedBox(width: 10,),
           ],
-
           title: const Text(""),
         ),
         body: Container(
@@ -36,7 +35,27 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
+        bottomNavigationBar:BottomNavigationBar(
+          backgroundColor: Color(0XFF1F1F1F),
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+    items: const <BottomNavigationBarItem>[
+    BottomNavigationBarItem(
+    icon: Icon(Icons.home,size: 30,color: Color.fromRGBO(204, 255, 3, 100),),
+    label: 'Home',
+    ),
+    BottomNavigationBarItem(
+    icon: Icon(Icons.favorite,size: 30,color: Color.fromRGBO(204, 255, 3, 100),),
+    label: 'Favourites',
+    ),
+    BottomNavigationBarItem(
+    icon: Icon(Icons.account_circle, size: 30,color: Color.fromRGBO(204, 255, 3, 100),),
+    label: 'Profile',
+    ),
+    ],
       ),
+    ),
     );
+
   }
 }
