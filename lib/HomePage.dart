@@ -17,14 +17,14 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.menu),
-          backgroundColor: Color(0xFF283241),
+          leading: const Icon(Icons.menu),
+          backgroundColor: const Color(0xFF1F1F1F),
           actions: const [
             Icon(Icons.shopping_cart),
             SizedBox(width: 10,),
           ],
 
-          title: Text(""),
+          title: const Text(""),
         ),
         body: Container(
           padding: EdgeInsets.zero,
@@ -32,7 +32,6 @@ class _HomePageState extends State<HomePage> {
             children: [
               Container(width: double.maxFinite,
                 height: 160,
-                child: Image(image: AssetImage("assets/images/homepage_bg.png"),),
               ),
             ],
           ),
